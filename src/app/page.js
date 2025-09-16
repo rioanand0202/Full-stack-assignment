@@ -1,6 +1,6 @@
 // app/page.js
 // Landing page with hero and features.
-
+import "./globals.css";
 import Container from "@/components/Container";
 import Button from "@/components/Button";
 

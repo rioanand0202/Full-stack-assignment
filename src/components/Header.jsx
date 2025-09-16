@@ -4,6 +4,8 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
+import LoginDialog from "./auth/LoginDialog";
+import SignupDialog from "./auth/SignupDialog";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -108,15 +110,8 @@ export default function Header() {
             Docs
           </Link>
           <div className="pt-2 border-t">
-            <Link href="/login" className="block px-3 py-2 rounded-md">
-              Log in
-            </Link>
-            <Link
-              href="/signup"
-              className="block mt-2 px-3 py-2 rounded-md bg-teal-600 text-white text-center"
-            >
-              Sign up
-            </Link>
+            <LoginDialog />
+            <SignupDialog />
           </div>
         </div>
       </div>
