@@ -1,10 +1,28 @@
 // components/auth/LoginDialog.jsx
 import * as Dialog from "@radix-ui/react-dialog";
 import AuthForm from "../forms/AuthForm";
+import { setAccessToken } from "@/lib/api";
+import axios from "axios";
 
 export default function LoginDialog() {
   const handleLogin = async (values) => {
-    console.log("Login via modal:", values);
+    try {
+      const res = await axios.post("/api/auth/login", values);
+      const { accessToken } = res.data;
+
+      // Store token in localStorage
+      localStorage.setItem("accessToken", accessToken);
+      setAccessToken(accessToken);
+
+      // Redirect to dashboard
+      window.location.href = "/dashboard";
+    } catch (error) {
+      if (error.response) {
+        alert(error.response.data.error);
+      } else {
+        alert("Something went wrong, please try again.");
+      }
+    }
   };
 
   return (
