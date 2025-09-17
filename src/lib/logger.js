@@ -1,6 +1,4 @@
 // lib/logger.js
-// Winston logger to file + console
-
 import { createLogger, transports, format } from "winston";
 
 const logger = createLogger({
@@ -9,12 +7,11 @@ const logger = createLogger({
     format.timestamp(),
     format.printf(
       ({ level, message, timestamp }) =>
-        `${timestamp} [${level.toUpperCase()}] ${message}`,
-    ),
+        `${timestamp} [${level.toUpperCase()}] ${message}`
+    )
   ),
   transports: [
-    new transports.Console(),
-    new transports.File({ filename: "logs/app.log" }),
+    new transports.Console(), // ✅ logs to Vercel dashboard
   ],
 });
 
