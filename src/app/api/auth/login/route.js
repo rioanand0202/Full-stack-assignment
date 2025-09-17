@@ -25,8 +25,9 @@ export async function POST(req) {
       );
     }
 
-    const accessToken = generateAccessToken(user);
+    const accessToken = await generateAccessToken(user);
     const refreshToken = generateRefreshToken(user);
+
     await prisma.session.create({
       data: {
         refreshToken,

@@ -1,3 +1,82 @@
 2025-09-16T19:05:32.648Z [INFO] User signed up: rioanand@gmail.com
 2025-09-16T19:10:22.258Z [INFO] User logged in: rioanand@gmail.com
 2025-09-16T19:14:04.852Z [INFO] User logged in: rioanand@gmail.com
+2025-09-17T05:26:08.284Z [INFO] User signed up: thirumoorthim2200@gmail.com
+2025-09-17T05:26:43.155Z [INFO] User logged in: thirumoorthim2200@gmail.com
+2025-09-17T05:30:53.807Z [INFO] User logged in: thirumoorthim2200@gmail.com
+2025-09-17T05:34:27.599Z [INFO] User signed up: thirumoorthim28@gmail.com
+2025-09-17T06:01:48.269Z [INFO] User logged in: thirumoorthim2200@gmail.com
+2025-09-17T06:16:25.271Z [INFO] User logged in: thirumoorthim2200@gmail.com
+2025-09-17T06:22:21.142Z [INFO] User logged in: thirumoorthim28@gmail.com
+2025-09-17T06:26:16.309Z [INFO] User logged in: thirumoorthim2200@gmail.com
+2025-09-17T06:26:54.729Z [INFO] User logged in: thirumoorthim2200@gmail.com
+2025-09-17T06:28:13.563Z [INFO] User signed up: mani@gmail.com
+2025-09-17T06:30:36.387Z [ERROR] Login error: 
+Invalid `__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["default"].session.create()` invocation in
+C:\Users\user\Documents\rio\Full-stack-assignment\.next\server\chunks\[root-of-the-server]__e4e95a81._.js:288:153
+
+  285 }
+  286 const accessToken = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$jwt$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["generateAccessToken"])(user);
+  287 const refreshToken = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$jwt$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["generateRefreshToken"])(user);
+→ 288 await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["default"].session.create({
+        data: {
+          refreshToken: {},
+                        ~~
+          userId: "cmfnjgv630000v8z457xpqndh",
+          expiresAt: new Date("2025-09-24T06:30:36.375Z")
+        }
+      })
+
+Argument `refreshToken`: Invalid value provided. Expected String, provided Object.
+2025-09-17T06:30:57.746Z [ERROR] Signup error: 
+Invalid `__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["default"].session.create()` invocation in
+C:\Users\user\Documents\rio\Full-stack-assignment\.next\server\chunks\[root-of-the-server]__f35d3f80._.js:295:153
+
+  292 });
+  293 const accessToken = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$jwt$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["generateAccessToken"])(user);
+  294 const refreshToken = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$jwt$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["generateRefreshToken"])(user);
+→ 295 await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["default"].session.create({
+        data: {
+          refreshToken: {},
+                        ~~
+          userId: "cmfnls96h000fv83w4a0akvej",
+          expiresAt: new Date("2025-09-24T06:30:57.740Z")
+        }
+      })
+
+Argument `refreshToken`: Invalid value provided. Expected String, provided Object.
+2025-09-17T06:32:02.348Z [ERROR] Login error: 
+Invalid `__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["default"].session.create()` invocation in
+C:\Users\user\Documents\rio\Full-stack-assignment\.next\server\chunks\[root-of-the-server]__e4e95a81._.js:288:153
+
+  285 }
+  286 const accessToken = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$jwt$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["generateAccessToken"])(user);
+  287 const refreshToken = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$jwt$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["generateRefreshToken"])(user);
+→ 288 await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["default"].session.create({
+        data: {
+          refreshToken: {},
+                        ~~
+          userId: "cmfnjgv630000v8z457xpqndh",
+          expiresAt: new Date("2025-09-24T06:32:02.338Z")
+        }
+      })
+
+Argument `refreshToken`: Invalid value provided. Expected String, provided Object.
+2025-09-17T06:32:43.673Z [INFO] User logged in: thirumoorthim2200@gmail.com
+2025-09-17T06:34:14.475Z [INFO] User logged in: thirumoorthim2200@gmail.com
+2025-09-17T06:35:45.239Z [INFO] User logged in: thirumoorthim2200@gmail.com
+2025-09-17T06:38:47.013Z [INFO] User logged in: thirumoorthim2200@gmail.com
+2025-09-17T06:39:10.620Z [INFO] User logged in: thirumoorthim2200@gmail.com
+2025-09-17T06:39:14.831Z [INFO] User logged in: thirumoorthim2200@gmail.com
+2025-09-17T06:41:38.990Z [INFO] User logged in: thirumoorthim2200@gmail.com
+2025-09-17T06:42:20.154Z [INFO] User logged in: thirumoorthim2200@gmail.com
+2025-09-17T06:42:33.037Z [INFO] User logged out
+2025-09-17T06:42:57.738Z [INFO] User logged in: thirumoorthim2200@gmail.com
+2025-09-17T06:43:34.892Z [INFO] User signed up: thirumoorthi.murugesan@neartekpod.com
+2025-09-17T06:44:16.038Z [INFO] User logged in: thirumoorthim2200@gmail.com
+2025-09-17T06:57:37.151Z [INFO] User logged out
+2025-09-17T06:57:38.197Z [INFO] User logged out
+2025-09-17T06:57:38.674Z [INFO] User logged out
+2025-09-17T06:58:15.554Z [INFO] User signed up: mani1@gmail.com
+2025-09-17T06:58:55.477Z [INFO] User logged in: mani1@gmail.com
+2025-09-17T07:01:25.421Z [INFO] User signed up: ragu@gmail.com

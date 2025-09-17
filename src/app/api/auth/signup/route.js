@@ -29,8 +29,12 @@ export async function POST(req) {
       data: { name, email, passwordHash },
     });
 
-    const accessToken = generateAccessToken(user);
+    // ✅ Await here so you get a real JWT string, not {}
+    const accessToken = await generateAccessToken(user);
+    console.log("AccessToken:", accessToken);
+
     const refreshToken = generateRefreshToken(user);
+
     await prisma.session.create({
       data: {
         refreshToken,
@@ -40,12 +44,13 @@ export async function POST(req) {
     });
 
     const res = NextResponse.json({ message: "User created", accessToken });
+
     res.cookies.set("refreshToken", refreshToken, {
       httpOnly: true,
       secure: process.env.NODE_ENV === "production",
       sameSite: "strict",
       path: "/",
-      maxAge: 60 * 60 * 24 * 7,
+      maxAge: 60 * 60 * 24 * 7, // 7 days
     });
 
     logger.info(`User signed up: ${email}`);
