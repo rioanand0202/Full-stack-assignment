@@ -50,8 +50,8 @@ export default function Header() {
             <Link href="/pricing" className="text-gray-700 hover:text-gray-900">
               Pricing
             </Link>
-            <Link href="/docs" className="text-gray-700 hover:text-gray-900">
-              Docs
+            <Link href="/blogs" className="text-gray-700 hover:text-gray-900">
+              Blogs
             </Link>
           </nav>
 
@@ -106,8 +106,8 @@ export default function Header() {
           <Link href="/pricing" className="block px-3 py-2 rounded-md">
             Pricing
           </Link>
-          <Link href="/docs" className="block px-3 py-2 rounded-md">
-            Docs
+          <Link href="/blogs" className="block px-3 py-2 rounded-md">
+            Blogs
           </Link>
           <div className="pt-2 border-t">
             <LoginDialog />
